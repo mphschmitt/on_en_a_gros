@@ -1,0 +1,14 @@
+{
+	"manifest_version": 2,
+		"name": "JVCLibre",
+		"version": "1.0",
+
+		"description": "Supprime la popup demandant de payer pour acceder au site",
+
+		"content_scripts": [
+			{
+				"matches": ["*://*.jeuxvideo.com/*"],
+				"js": ["on_en_a_gros.js"]
+			}
+		]
+}
